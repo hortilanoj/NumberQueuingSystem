@@ -9,6 +9,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Microsoft.Expression.Interactivity.Core;
+using Microsoft.Expression.Interactivity.Input;
+using Microsoft.Expression.Interactivity.Layout;
+using Microsoft.Expression.Interactivity.Media;
 using System;
 using System.Diagnostics;
 using System.Windows;

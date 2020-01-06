@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberQueuingSystem.BOL", "NumberQueuingSystem.BOL\NumberQueuingSystem.BOL.csproj", "{0DDEFA4A-AE8F-4F2E-8944-5EADFA88AAEB}"
 EndProject
@@ -20,36 +20,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbrQueuingSystem.MANAGEMENT", "NumbrQueuingSystem.MANAGEMENT\NumbrQueuingSystem.MANAGEMENT.csproj", "{C79C5945-4683-4855-B660-96B7B0B9131D}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://hortilanoj.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = NumberQueuingSystem.BOL\\NumberQueuingSystem.BOL.csproj
-		SccProjectName1 = NumberQueuingSystem.BOL
-		SccLocalPath1 = NumberQueuingSystem.BOL
-		SccProjectUniqueName2 = NumberQueuingSystem.DAL\\NumberQueuingSystem.DAL.csproj
-		SccProjectName2 = NumberQueuingSystem.DAL
-		SccLocalPath2 = NumberQueuingSystem.DAL
-		SccProjectUniqueName3 = NumberQueuingSystem.DISPLAY\\NumberQueuingSystem.DISPLAY.csproj
-		SccProjectName3 = NumberQueuingSystem.DISPLAY
-		SccLocalPath3 = NumberQueuingSystem.DISPLAY
-		SccProjectUniqueName4 = NumberQueuingSystem.TERMINAL\\NumberQueuingSystem.TERMINAL.csproj
-		SccProjectName4 = NumberQueuingSystem.TERMINAL
-		SccLocalPath4 = NumberQueuingSystem.TERMINAL
-		SccProjectUniqueName5 = COMMON\\COMMON.csproj
-		SccProjectName5 = COMMON
-		SccLocalPath5 = COMMON
-		SccProjectUniqueName6 = NumberQueuingSystem.FRONTDESK\\NumberQueuingSystem.FRONTDESK.csproj
-		SccProjectName6 = NumberQueuingSystem.FRONTDESK
-		SccLocalPath6 = NumberQueuingSystem.FRONTDESK
-		SccProjectUniqueName7 = NumberQueuingSystem.RPT\\NumberQueuingSystem.RPT.csproj
-		SccProjectName7 = NumberQueuingSystem.RPT
-		SccLocalPath7 = NumberQueuingSystem.RPT
-		SccProjectUniqueName8 = NumbrQueuingSystem.MANAGEMENT\\NumbrQueuingSystem.MANAGEMENT.csproj
-		SccProjectName8 = NumbrQueuingSystem.MANAGEMENT
-		SccLocalPath8 = NumbrQueuingSystem.MANAGEMENT
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -142,5 +112,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73052714-C549-4E92-B00E-858ADCA9E3C8}
 	EndGlobalSection
 EndGlobal

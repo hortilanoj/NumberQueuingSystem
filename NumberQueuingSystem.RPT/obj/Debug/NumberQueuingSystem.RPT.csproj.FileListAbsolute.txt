@@ -1,0 +1,15 @@
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\NumberQueuingSystem.RPT.dll.config
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\NumberQueuingSystem.RPT.dll
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\NumberQueuingSystem.RPT.pdb
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\NumberQueuingSystem.BOL.dll
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\Telerik.Reporting.dll
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\NumberQueuingSystem.BOL.pdb
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\Telerik.Reporting.pdb
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\bin\Debug\Telerik.Reporting.xml
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.csprojAssemblyReference.cache
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.rptQueueTicket.resources
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.csproj.GenerateResource.cache
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.dll.licenses
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.csproj.CopyComplete
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.dll
+C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.RPT\obj\Debug\NumberQueuingSystem.RPT.pdb
