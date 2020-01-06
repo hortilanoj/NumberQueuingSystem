@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="NumberQueuingSystem.DISPLAY.Windows.Controls.TerminalControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="187.693" Width="369.669" Padding="0.25,0,0.25,0.25">
+    <Grid x:Name="TerminalBackground" Margin="0,1,1,0" Background="#1F00C1">
+        <StackPanel Width="Auto" Height="Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="TerminalTitle" Text="PROCESSOR #" FontSize="30"  Foreground="White" FontStretch="Condensed" Margin="0" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="lblQueueNumber" Text="SYM0000" Margin="0,-1,0,0" FontSize="60"  Padding="0" Foreground="White" FontFamily="Segoe UI Semibold" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

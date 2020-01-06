@@ -1,0 +1,18 @@
+﻿<Window x:Class="NumberQueuingSystem.FRONTDESK.Views.vFrontDesk"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="" Height="711.353" Width="1011.639" WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="CanMinimize" WindowStyle="None" MouseRightButtonDown="Window_MouseRightButtonDown" Icon="/NumberQueuingSystem.FRONTDESK;component/icon.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="/NumberQueuingSystem.FRONTDESK;component/CSC.jpg" Opacity="80"/>
+    </Window.Background>
+    <Grid>
+        <ItemsControl ItemsSource="{Binding Buttons}" FlowDirection="LeftToRight" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </Grid>
+</Window>

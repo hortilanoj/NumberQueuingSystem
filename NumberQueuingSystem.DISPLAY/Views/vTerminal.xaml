@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="NumberQueuingSystem.DISPLAY.Views.vTerminal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="{Binding DisplaySetting.terminal_height}" Width="{Binding DisplaySetting.terminal_width}" Padding="1,1,0,0" Background="{x:Null}" Foreground="{x:Null}">
+    <Grid x:Name="TerminalBackground" Margin="1" Background="{Binding Background_Color}">
+        <StackPanel Width="Auto" Height="Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="TerminalTitle" Text="{Binding Terminal.name}" Foreground="{Binding Title_Color}" FontSize="{Binding DisplaySetting.terminal_name_fontsize}" FontStretch="Condensed" Margin="0" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="lblQueueNumber" Text="{Binding TerminalQueue}" Foreground="{Binding Number_Color}" Visibility="{Binding IsVisible}" Margin="0,-1,0,0" FontSize="{Binding DisplaySetting.queue_number_fontsize}" Padding="0" FontFamily="Segoe UI Semibold" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
