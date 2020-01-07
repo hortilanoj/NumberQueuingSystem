@@ -1,31 +1,26 @@
-CREATE DATABASE  IF NOT EXISTS `queuing_system` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `queuing_system`;
--- MySQL dump 10.13  Distrib 8.0.11, for Win64 (x86_64)
---
--- Host: localhost    Database: queuing_system
--- ------------------------------------------------------
--- Server version	8.0.11
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.3.13-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             9.5.0.5196
+-- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
- SET NAMES utf8 ;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Table structure for table `display_settings`
---
 
+-- Dumping database structure for queuing_system
+DROP DATABASE IF EXISTS `queuing_system`;
+CREATE DATABASE IF NOT EXISTS `queuing_system` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `queuing_system`;
+
+-- Dumping structure for table queuing_system.display_settings
 DROP TABLE IF EXISTS `display_settings`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `display_settings` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `display_settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `terminal_name_fontsize` double DEFAULT NULL,
   `queue_number_fontsize` double DEFAULT NULL,
   `terminal_width` double DEFAULT NULL,
@@ -40,53 +35,36 @@ CREATE TABLE `display_settings` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `display_settings_id_UNIQUE` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `display_settings`
---
-
-LOCK TABLES `display_settings` WRITE;
+-- Dumping data for table queuing_system.display_settings: ~0 rows (approximately)
+DELETE FROM `display_settings`;
 /*!40000 ALTER TABLE `display_settings` DISABLE KEYS */;
 /*!40000 ALTER TABLE `display_settings` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `task`
---
-
+-- Dumping structure for table queuing_system.task
 DROP TABLE IF EXISTS `task`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `task` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `task` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` tinyint(255) DEFAULT NULL,
   `terminal_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
-  KEY `task_terminal_idx` (`terminal_id`),
-  CONSTRAINT `task_terminal` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  KEY `task_terminal_idx` (`terminal_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `task`
---
-
-LOCK TABLES `task` WRITE;
+-- Dumping data for table queuing_system.task: ~0 rows (approximately)
+DELETE FROM `task`;
 /*!40000 ALTER TABLE `task` DISABLE KEYS */;
+INSERT INTO `task` (`id`, `type`, `terminal_id`) VALUES
+	(1, 4, 1),
+	(3, 4, 1),
+	(5, 4, 1);
 /*!40000 ALTER TABLE `task` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `terminal`
---
-
+-- Dumping structure for table queuing_system.terminal
 DROP TABLE IF EXISTS `terminal`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `terminal` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `terminal` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `title_color` varchar(255) DEFAULT NULL,
@@ -96,27 +74,19 @@ CREATE TABLE `terminal` (
   `sorting` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `terminal`
---
-
-LOCK TABLES `terminal` WRITE;
+-- Dumping data for table queuing_system.terminal: ~0 rows (approximately)
+DELETE FROM `terminal`;
 /*!40000 ALTER TABLE `terminal` DISABLE KEYS */;
+INSERT INTO `terminal` (`id`, `name`, `description`, `title_color`, `number_color`, `background_color`, `active`, `sorting`) VALUES
+	(1, 'Sample', '', '#FFFFFFFF', '#FFFFFFFF', '#FF1F00C1', 1, 0);
 /*!40000 ALTER TABLE `terminal` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `terminal_queue`
---
-
+-- Dumping structure for table queuing_system.terminal_queue
 DROP TABLE IF EXISTS `terminal_queue`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `terminal_queue` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `terminal_queue` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `transaction_id` int(11) DEFAULT NULL,
   `terminal_id` int(11) DEFAULT NULL,
   `transaction_queue_id` int(11) DEFAULT NULL,
@@ -125,58 +95,35 @@ CREATE TABLE `terminal_queue` (
   UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `terminal_queue_transaction_idx` (`transaction_id`),
   KEY `terminal_queue_terminal_idx` (`terminal_id`),
-  KEY `terminal_queue_transaction_queue_idx` (`transaction_queue_id`),
-  CONSTRAINT `terminal_queue_terminal` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`),
-  CONSTRAINT `terminal_queue_transaction` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`id`),
-  CONSTRAINT `terminal_queue_transaction_queue` FOREIGN KEY (`transaction_queue_id`) REFERENCES `transaction_queue` (`id`)
+  KEY `terminal_queue_transaction_queue_idx` (`transaction_queue_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `terminal_queue`
---
-
-LOCK TABLES `terminal_queue` WRITE;
+-- Dumping data for table queuing_system.terminal_queue: ~0 rows (approximately)
+DELETE FROM `terminal_queue`;
 /*!40000 ALTER TABLE `terminal_queue` DISABLE KEYS */;
 /*!40000 ALTER TABLE `terminal_queue` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `terminal_transaction`
---
-
+-- Dumping structure for table queuing_system.terminal_transaction
 DROP TABLE IF EXISTS `terminal_transaction`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `terminal_transaction` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `terminal_transaction` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `terminal_id` int(11) DEFAULT NULL,
   `priority_level` tinyint(4) DEFAULT NULL,
+  `transaction_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
-  KEY `terminal_transaction_terminal_idx` (`terminal_id`),
-  CONSTRAINT `terminal_transaction_terminal` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`)
+  KEY `terminal_transaction_terminal_idx` (`terminal_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `terminal_transaction`
---
-
-LOCK TABLES `terminal_transaction` WRITE;
+-- Dumping data for table queuing_system.terminal_transaction: ~0 rows (approximately)
+DELETE FROM `terminal_transaction`;
 /*!40000 ALTER TABLE `terminal_transaction` DISABLE KEYS */;
 /*!40000 ALTER TABLE `terminal_transaction` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `transaction`
---
-
+-- Dumping structure for table queuing_system.transaction
 DROP TABLE IF EXISTS `transaction`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `transaction` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `transaction` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `prefix` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
@@ -184,60 +131,32 @@ CREATE TABLE `transaction` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `transaction`
---
-
-LOCK TABLES `transaction` WRITE;
+-- Dumping data for table queuing_system.transaction: ~0 rows (approximately)
+DELETE FROM `transaction`;
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
 /*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `transaction_queue`
---
-
+-- Dumping structure for table queuing_system.transaction_queue
 DROP TABLE IF EXISTS `transaction_queue`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `transaction_queue` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `transaction_queue` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `terminal_id` int(11) DEFAULT NULL,
   `queue_number` int(11) DEFAULT NULL,
   `date_time` datetime DEFAULT NULL,
+  `transaction_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
-  KEY `transaction_queue_terminal_idx` (`terminal_id`),
-  CONSTRAINT `transaction_queue_terminal` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  KEY `transaction_queue_terminal_idx` (`terminal_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `transaction_queue`
---
-
-LOCK TABLES `transaction_queue` WRITE;
+-- Dumping data for table queuing_system.transaction_queue: ~0 rows (approximately)
+DELETE FROM `transaction_queue`;
 /*!40000 ALTER TABLE `transaction_queue` DISABLE KEYS */;
+INSERT INTO `transaction_queue` (`id`, `terminal_id`, `queue_number`, `date_time`, `transaction_id`) VALUES
+	(1, 1, 1, NULL, NULL);
 /*!40000 ALTER TABLE `transaction_queue` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Dumping events for database 'queuing_system'
---
-
---
--- Dumping routines for database 'queuing_system'
---
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2020-01-07 17:29:37

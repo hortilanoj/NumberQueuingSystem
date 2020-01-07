@@ -26,7 +26,7 @@ namespace NumberQueuingSystem.DISPLAY.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Server=127.0.0.1;User ID=root;Password=Qwerty1234;Database=queuingsystem")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server=127.0.0.1;User ID=root;Password=Qwerty1234;Database=queuing_system")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
