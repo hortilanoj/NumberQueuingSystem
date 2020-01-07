@@ -9,7 +9,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="ConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Server=127.0.0.1;User ID=root;Password=Qwerty1234;Database=queuingsystem</Value>
+      <Value Profile="(Default)">Server=127.0.0.1;User ID=root;Password=Qwerty1234;Database=queuing_system</Value>
     </Setting>
   </Settings>
 </SettingsFile>

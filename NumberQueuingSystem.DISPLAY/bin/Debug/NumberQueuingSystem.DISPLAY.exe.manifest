@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uD0pAEeLEh9NkJpYhCCOepDmY4nD/X8TdBOnSPOUnXk=</dsig:DigestValue>
+        <dsig:DigestValue>VfxwVMWO4IfhCFh+3hhl1bvhjG9lGvDVHjsXrNGv6fQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ji8d1YUL+UyNiWhDcVtvztyw+DQQtW5emrGdGzWY2Jg=</dsig:DigestValue>
+        <dsig:DigestValue>2G42Sb1efI9QcXz4Bo/N6lxIuiQEA2HRQDiYVlwp2WI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UmkZsQotyRXxEDJ3Alou7qyeiJcC2HJWfiX4WAam3U0=</dsig:DigestValue>
+        <dsig:DigestValue>AgOnD+bGqXk10ObjdFW49PIcuYgWUVkhjwZ4xfmnqgg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HWsdpOmChI44yFFp0qO6tqGt8kxEug5QQ9J2Pb4txMU=</dsig:DigestValue>
+        <dsig:DigestValue>n6peNgrEN8H9Pw+ZV64NYWVA+GqZGZHAfuaBqfPnKdY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -186,13 +186,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="NumberQueuingSystem.DISPLAY.exe.config" size="1276">
+  <file name="NumberQueuingSystem.DISPLAY.exe.config" size="1277">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VL4Nz1b9iRMZVQOCs5ShZxu1tboeg81dAmpRH04I1pA=</dsig:DigestValue>
+      <dsig:DigestValue>YnnIQvCLSYYvSg6nrRW75NcZYaiojQqCVVgZxWvAxCY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="QueuingSystem.png.ico" size="99678">
