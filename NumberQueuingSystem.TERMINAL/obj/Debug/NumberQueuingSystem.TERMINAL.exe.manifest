@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U+pQQxAFvALghZ/UODqH4LzNRX5+60YfmkFpJV8vZMM=</dsig:DigestValue>
+        <dsig:DigestValue>uD0pAEeLEh9NkJpYhCCOepDmY4nD/X8TdBOnSPOUnXk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TWmIM97VCjWs34aMrLkzDw1GbljL7q7pEMxBejqZhLY=</dsig:DigestValue>
+        <dsig:DigestValue>Ji8d1YUL+UyNiWhDcVtvztyw+DQQtW5emrGdGzWY2Jg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2wO550u12Vlt6ErLBaswUhu6zaDUirR/iBazpviu5YI=</dsig:DigestValue>
+        <dsig:DigestValue>11lgJjXxH/9SLwg7q+cbZG/uIxLfRL1aYqA/Ut6JXFI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5wQuPEprs6zIvSgPjb9jNhLa0m2vFf8ApUzrKb+20Iw=</dsig:DigestValue>
+        <dsig:DigestValue>1mkO1Abncm8w/W+Dp7vetVaN4rTYaam8rAAxhmGnuBM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -354,13 +354,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="NumberQueuingSystem.TERMINAL.exe.config" size="1379">
+  <file name="NumberQueuingSystem.TERMINAL.exe.config" size="1327">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>SQvqFhhzCAEiPUHTR8wwLdeHZ29lPd7x8PReuaDtAhc=</dsig:DigestValue>
+      <dsig:DigestValue>HFFO02Mao5iZH4ajVGs0xoyi2HZVzaMVqe6rBEuzTvA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Terminal.ico" size="432254">
