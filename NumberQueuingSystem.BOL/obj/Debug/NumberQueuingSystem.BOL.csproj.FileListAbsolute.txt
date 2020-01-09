@@ -1,5 +1,0 @@
-C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.BOL\bin\Debug\NumberQueuingSystem.BOL.dll
-C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.BOL\bin\Debug\NumberQueuingSystem.BOL.pdb
-C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.BOL\obj\Debug\NumberQueuingSystem.BOL.csprojAssemblyReference.cache
-C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.BOL\obj\Debug\NumberQueuingSystem.BOL.dll
-C:\Users\wolfb\source\repos\NumberQueuingSystem\NumberQueuingSystem.BOL\obj\Debug\NumberQueuingSystem.BOL.pdb
