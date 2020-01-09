@@ -1,5 +1,4 @@
 C:\Users\wolfb\source\repos\NumberQueuingSystem\COMMON\bin\Debug\COMMON.dll
 C:\Users\wolfb\source\repos\NumberQueuingSystem\COMMON\bin\Debug\COMMON.pdb
-C:\Users\wolfb\source\repos\NumberQueuingSystem\COMMON\obj\Debug\COMMON.csprojAssemblyReference.cache
 C:\Users\wolfb\source\repos\NumberQueuingSystem\COMMON\obj\Debug\COMMON.dll
 C:\Users\wolfb\source\repos\NumberQueuingSystem\COMMON\obj\Debug\COMMON.pdb

@@ -8,7 +8,12 @@
     <Setting Name="IsConfigured" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=127.0.0.1;User ID=root;Password=Qwerty1234;Database=queuing_system&lt;/ConnectionString&gt;
+  &lt;ProviderName /&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Server=127.0.0.1;User ID=root;Password=Qwerty1234;Database=queuing_system</Value>
     </Setting>
   </Settings>
