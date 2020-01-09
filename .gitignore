@@ -26,3 +26,17 @@ hs_err_pid*
 .vs/*
 COMMON/bin/*
 COMMON/obj/*
+NumberQueuingSystem.DAL/bin/*
+NumberQueuingSystem.DAL/obj/*
+NumberQueuingSystem.DAL/bin/*
+NumberQueuingSystem.DAL/obj/*
+NumberQueuingSystem.RPT/bin/*
+NumberQueuingSystem.RPT/obj/*
+NumberQueuingSystem.DISPLAY/bin/*
+NumberQueuingSystem.DISPLAY/obj/*
+NumberQueuingSystem.FRONTDESK/bin/*
+NumberQueuingSystem.FRONTDESK/obj/*
+NumberQueuingSystem.TERMINAL/bin/*
+NumberQueuingSystem.TERMINAL/obj/*
+NumberQueuingSystem.MANAGEMENT/bin/*
+NumberQueuingSystem.MANAGEMENT/obj/*
