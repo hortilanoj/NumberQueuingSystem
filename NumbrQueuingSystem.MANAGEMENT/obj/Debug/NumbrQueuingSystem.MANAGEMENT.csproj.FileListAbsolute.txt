@@ -35,7 +35,6 @@ C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\bi
 C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\obj\Debug\NumbrQueuingSystem.MANAGEMENT.csprojAssemblyReference.cache
 C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\obj\Debug\MainWindow.baml
 C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\obj\Debug\Views\Window1.baml
 C:\Users\wolfb\source\repos\NumberQueuingSystem\NumbrQueuingSystem.MANAGEMENT\obj\Debug\MainWindow.g.cs

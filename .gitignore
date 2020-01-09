@@ -23,6 +23,6 @@
 hs_err_pid*
 
 # folders
-/.vs/
-/packages/
-/COMMON/bin
+.vs/*
+COMMON/bin/*
+COMMON/obj/*
