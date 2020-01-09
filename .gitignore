@@ -29,8 +29,8 @@ COMMON/bin/*
 COMMON/obj/*
 NumberQueuingSystem.DAL/bin/*
 NumberQueuingSystem.DAL/obj/*
-NumberQueuingSystem.DAL/bin/*
-NumberQueuingSystem.DAL/obj/*
+NumberQueuingSystem.BOL/bin/*
+NumberQueuingSystem.BOL/obj/*
 NumberQueuingSystem.RPT/bin/*
 NumberQueuingSystem.RPT/obj/*
 NumberQueuingSystem.DISPLAY/bin/*
